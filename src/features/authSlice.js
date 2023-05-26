@@ -32,7 +32,7 @@ export const LoginUser = createAsyncThunk(
   async (user, thunkAPI) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "http://103.193.177.199:8000/api/auth/login",
         {
           userid: user.userid,
         }
